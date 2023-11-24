@@ -1,0 +1,52 @@
+Definitions:
+- Palindrome: same both ways (abc, cba)
+- Anagram: use same characters, in same quanitity, but different orders (abc, bac)
+- Fibonacci: each number in the sequence is the sum of two numbers that precede it (0, 1, 1, 2, 3, 5, 8, 13, 21, 34…)
+- Factorial: multiply all whole numbers from our chosen number down to 1 (4! = 4 × 3 × 2 × 1 = 24)
+
+
+Problem Solving Steps
+- Basic
+  - Understand Problem
+  - Restate in own words
+  - What are inputs/outputs
+Explore Examples
+Test cases: simple inputs, complex inputs, no inputs, invalid inputs
+Break Down
+Write out the steps
+Solve/Simplify
+Do what you know, then incorporate the difficult
+Refactor
+Detailed
+Listen carefully to question
+Come up with good example
+Come up with brute force algorithm
+Optimize 
+Walk through the algorithm
+Code 
+Test
+
+Problem Solving Patterns
+Frequency Counter (usually O(n))
+Pattern that uses objects or sets to collect values/frequencies of values
+Multiple Pointers
+Sliding Window
+Divide and Conquer
+Pattern that divides a data set into smaller chunks then repeats process with each subset of data
+Dynamic Programming
+Greedy Algorithms
+Backtracking
+
+Data Flow Questions:
+Draw stuff and talk!
+Design database
+Design User interface
+Strategy
+Identify 2 core features
+Possible implementation
+Address difficulties
+Scaling solutions
+Caching data
+Request from database once, then store in cache 
+Server architecture/deployment options
+Use load balancer

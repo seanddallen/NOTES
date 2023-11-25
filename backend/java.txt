@@ -1,6 +1,10 @@
 KEYWORDS
 - Static
-  - 
+  - applies to the class itself, not to specific instances of the class
+  - static variables
+    - can only be accessed on the class, not on any instance
+  - static methods
+    - can only be called by the class, not any instance
 
 BASICS
 - Variables

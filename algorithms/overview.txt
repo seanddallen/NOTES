@@ -8,45 +8,40 @@ Definitions:
 Problem Solving Steps
 - Basic
   - Understand Problem
-  - Restate in own words
-  - What are inputs/outputs
-Explore Examples
-Test cases: simple inputs, complex inputs, no inputs, invalid inputs
-Break Down
-Write out the steps
-Solve/Simplify
-Do what you know, then incorporate the difficult
-Refactor
-Detailed
-Listen carefully to question
-Come up with good example
-Come up with brute force algorithm
-Optimize 
-Walk through the algorithm
-Code 
-Test
+    - Restate in own words
+    - What are inputs/outputs
+  - Explore Examples
+    - Test cases: simple inputs, complex inputs, no inputs, invalid inputs
+  - Break Down
+    - Write out the steps
+    - Solve/Simplify
+    - Do what you know, then incorporate the difficult
+    - Refactor
+  - Come up with brute force algorithm
+  - Optimize 
+  - Walk through the algorithm
 
 Problem Solving Patterns
-Frequency Counter (usually O(n))
-Pattern that uses objects or sets to collect values/frequencies of values
-Multiple Pointers
-Sliding Window
-Divide and Conquer
-Pattern that divides a data set into smaller chunks then repeats process with each subset of data
-Dynamic Programming
-Greedy Algorithms
-Backtracking
+- Frequency Counter (usually O(n))
+  - Pattern that uses objects or sets to collect values/frequencies of values
+- Multiple Pointers
+- Sliding Window
+- Divide and Conquer
+  - Pattern that divides a data set into smaller chunks then repeats process with each subset of data
+- Dynamic Programming
+- Greedy Algorithms
+- Backtracking
 
 Data Flow Questions:
-Draw stuff and talk!
-Design database
-Design User interface
-Strategy
-Identify 2 core features
-Possible implementation
-Address difficulties
-Scaling solutions
-Caching data
-Request from database once, then store in cache 
-Server architecture/deployment options
-Use load balancer
+- Draw stuff and talk!
+- Design database
+- Design User interface
+- Strategy
+    - Identify 2 core features
+    - Possible implementation
+    - Address difficulties
+    - Scaling solutions
+    - Caching data
+    - Request from database once, then store in cache 
+    - Server architecture/deployment options
+    - Use load balancer

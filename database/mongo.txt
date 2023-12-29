@@ -41,7 +41,21 @@ Mongo Queries
     - finds all documents that match query
 
 Mongo Repository
-- 
+- Main class
+  - @EnableMongoRepositories("com.example.repository")
+- @Repository
+  public interface StudentRepository extends MongoRepository<Student, String> {}
+- autowire the repository into the service class
+- create document
+  - studentRepository.save(student)
+- read document
+  - studentRepository.findById(id)
+- get all documents
+  - studentRepository.findAll()
+- update document
+  - studentRepository.save(student)
+- delete document
+  - studentRepository.deleteById(id)
 
 Spring Data MongoDB
 - annotations

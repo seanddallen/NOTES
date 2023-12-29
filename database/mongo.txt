@@ -11,3 +11,12 @@ SQL vs noSQL
     - column -> field
     - row -> document
     - foreign key -> sub-document (reference)
+
+Mongo Queries
+- AND
+  - { $and : [{"key1":"value1"}, {"key2":"value2"}] }
+- OR
+  - { $or : [{"key1":"value1"}, {"key2":"value2"}] }
+- IN
+  - returns all documents that match any specified values for a given field
+  - { "name": { $in : ["Sean", "John", "Mary"] }

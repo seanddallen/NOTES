@@ -20,3 +20,12 @@ Mongo Queries
 - IN
   - returns all documents that match any specified values for a given field
   - { "name": { $in : ["Sean", "John", "Mary"] }
+- update
+  - db.<collection>.update(<query>, <set value>)
+    - finds all documents that match query, then updates only ONE documents with values specified by $set (or adds new keey/value too each)
+    - query: { "name": "Sean"}
+    - set: { $set : { "anyField" : "anyValue" }, {"anotherField" : "anotherValue"} }
+  - db.<collection>.updateMany(<query>, <set value>)
+    - finds all documents that match query, then updates ALL documents with values specified by $set (or adds new keey/value too each)
+- delete
+  - 

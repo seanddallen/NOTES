@@ -43,7 +43,15 @@ Mongo Queries
 Mongo Repository
 - 
 
-
+Spring Data MongoDB
+- annotations
+  - @Document(collection="collectionName")
+    public class collectionName {}
+  - @Field(name="fieldName")
+    - not needed if field name is same as collection field name, only if they are different
+  - @Id
+  -@PersistenceConstructor 
+    - when class has more than one constructor
 
 
 

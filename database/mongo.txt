@@ -1,1 +1,13 @@
+MONGO
 
+General
+- document based noSQL database
+- stores in JSON like documents (BSON)
+- flexible structure to store data
+
+SQL vs noSQL
+  - Terms
+    - table -> collection
+    - column -> field
+    - row -> document
+    - foreign key -> sub-document (reference)

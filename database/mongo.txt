@@ -12,6 +12,12 @@ SQL vs noSQL
     - row -> document
     - foreign key -> sub-document (reference)
 
+Mongo Terminal
+- switch to database 
+  - "use <dbName>"
+- execute command
+  - db.<collection>.<command>
+
 Mongo Queries
 - AND
   - { $and : [{"key1":"value1"}, {"key2":"value2"}] }
@@ -28,4 +34,34 @@ Mongo Queries
   - db.<collection>.updateMany(<query>, <set value>)
     - finds all documents that match query, then updates ALL documents with values specified by $set (or adds new keey/value too each)
 - delete
-  - 
+  - db.<collection>.remove(<query>)
+    - finds all documents that match query, then deletes ALL documents that match query
+- find
+  - db.<collection>.find(<query>)
+    - finds all documents that match query
+
+Mongo Repository
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

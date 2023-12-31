@@ -6,11 +6,24 @@ General
 - flexible structure to store data
 
 SQL vs noSQL
-  - Terms
-    - table -> collection
-    - column -> field
-    - row -> document
-    - foreign key -> sub-document (reference)
+- Terms
+  - table -> collection
+  - column -> field
+  - row -> document
+  - foreign key -> sub-document (reference)
+
+References
+- embedded
+  - have entire document within the document (nested object)
+- reference
+  - have reference to document in seeparate collection (similar to join)
+  - @DBRef (for field in collection class)
+  - "referenceCollection": DBRef("<referenceCollection>", ObjectId(<id>))
+- repositories
+  - save reeference documents, then save main document
+- lazy loading
+  - @DBRef(lazy=true)
+  - if false (default) will return reference document with document, if true will not return reference document (field will be null)
 
 Mongo Terminal
 - switch to database 
@@ -39,6 +52,16 @@ Mongo Queries
 - find
   - db.<collection>.find(<query>)
     - finds all documents that match query
+- Native mongo queries in spring boot
+  - @Query("<query>") -- annotation over method to return result of query
+- Pagination
+  - page number = page number (1, 2, 3, etc)
+  - limit = page size (results per page)
+  - skip = how many documents to skip per page (for which results to return)
+    - (page# - 1) * page size
+  - Pageable interface
+    - Pageable pageable = PageRequest.of(page, size)
+    - studentRepository.find(pageable).getContent()
 
 Mongo Repository
 - Main class
@@ -56,6 +79,10 @@ Mongo Repository
   - studentRepository.save(student)
 - delete document
   - studentRepository.deleteById(id)
+- AND queries
+  - findByNameAndEmail(name, email)
+- OR queries
+  - findByNameOrEmail(name, email)
 
 Spring Data MongoDB
 - annotations

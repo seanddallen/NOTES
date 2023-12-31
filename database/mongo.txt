@@ -83,10 +83,18 @@ Mongo Repository
   - studentRepository.save(student)
 - delete document
   - studentRepository.deleteById(id)
-- AND queries
-  - findByNameAndEmail(name, email)
-- OR queries
-  - findByNameOrEmail(name, email)
+- Queries
+  - AND
+    - findByNameAndEmail(name, email)
+  - OR 
+    - findByNameOrEmail(name, email)
+  - LIKE
+    - native: { "email": /gmail/ }
+    - findByEmailIsLike(email)
+  - STARTS WITH
+    - native: { "name": /^sean/ }
+    - findByNameStartsWith(name)
+
 
 Spring Data MongoDB
 - annotations
@@ -95,8 +103,10 @@ Spring Data MongoDB
   - @Field(name="fieldName")
     - not needed if field name is same as collection field name, only if they are different
   - @Id
-  -@PersistenceConstructor 
+  - @PersistenceConstructor 
     - when class has more than one constructor
+  - @Transient
+    - when dont want to save/update that field to document (maybe want it for business logic at runtime etc)
 
 
 

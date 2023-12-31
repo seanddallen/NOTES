@@ -61,7 +61,11 @@ Mongo Queries
     - (page# - 1) * page size
   - Pageable interface
     - Pageable pageable = PageRequest.of(page, size)
-    - studentRepository.find(pageable).getContent()
+    - studentRepository.findAll(pageable).getContent()
+- Sorting
+  - Sort sort = Sort.by(Sort.Direction.ASC, <fieldName>)
+  - studentRepository.findAll(sort)
+
 
 Mongo Repository
 - Main class

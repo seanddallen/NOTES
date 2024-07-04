@@ -2,3 +2,70 @@ GENERAL
 - Unit Tests
   - test classes / public methods
   - mock other classes used in the class being tested
+- Terms
+  - dummy: objects passed to test that are not required for the scenario (object details not important)
+    - any(Myclass.class)
+  - stubs: methods that only do and provide return values that we ask
+    - when(method).thenReturn(val)
+  - mocks: objects that we can return values, throw exceptions, verify methods called, etc. (more than a stub)
+    - Mockito.Mock(Myclass.class)
+  - fake: shortcuts (more rare)
+  - spies: used for partial mocking - calls real methods on object, but can also stub a method that can record side effects
+    - @Spy myList
+    - Mockito.doReturn(2).when(myList).size();
+    - Mocks use fake object/methods, spies use real objects/methods (and can stub parts)
+
+
+JUNIT
+- Annotations
+  - @Test
+    - 
+  - @BeforeEach / @AfterEach
+    - setup objects/methods to run before/after each test
+    - public void setup(){}
+  - @Ignore
+    - can be used to ignore a test
+- Methods
+  - Assertions.
+    - assertNotNull, assertEquals, assertThrows
+- Exceptions
+  - AssertThrows(class, executable)
+    - AssertThrows(IllegalArgumentException.class, ()-> { code... })
+
+MOCKITO
+- Setup Method
+  - MockitoAnnotations.openMocks(this);
+- Annotations
+  - @Mock
+  - @InjectMocks
+    - injects any mocks defined into class being tested
+- Methods
+  - when()
+    - thenReturn()
+    - thenThrow()
+  - verify()
+    - verifies a method has been called (on tested and mocked objects)
+    - verify(object, <verificationModes>).method(arg)
+      - verificationModes
+        - times(1), atLeast(1)
+  - Static Methods
+    - mockStatic(Class.class)
+    - when(Class.staticMethod()).thenReturn(...)
+- Matchers
+  - any(), any(MyClass.class), anyInt(), etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

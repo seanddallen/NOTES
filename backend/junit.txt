@@ -1,1 +1,4 @@
-
+GENERAL
+- Unit Tests
+  - test classes / public methods
+  - mock other classes used in the class being tested

@@ -6,6 +6,82 @@ KEYWORDS
   - static methods
     - can only be called by the class, not any instance
 
-BASICS
-- Variables
-- Methods
+OBJECT ORIENTED PROGRAMMING
+- 
+
+JAVA PLATFORM
+- Platform Independent (build once, run anywhere)
+  - jar file can be run on windows/mac/linux (with JVM installed)
+  - .java code gets compiled to .class files which contain byte code which JVM can convert to executable code for OS
+- JDK(JRE(JVM))
+  - JDK 
+    - javac, jar, debugging tools, javap
+    - used to compile/debug Java 
+    - used by devs to have full functionality to compile, debug, and run Java code
+  - JRE
+    - java, javaw, libraries (core java code/libraries)
+    - Used to run Java program
+  - JVM
+    - Just-In-Time Compiler (JIT)
+    - converts complied bytecode into executable code
+- ClassLoader
+  - For a program to run the JVM uses the ClassLoader to load all classes needed
+  - 3 class loaders
+    - system class loader: loads all classes from CLASSPATH (classes you write)
+      - CLASSPATH
+        - searches all jars found at classpath location
+    - extension class loader: loads all classes from extension directory (classes from frameworks/dependencies used)
+    - bootstrap class loader: loads all classes from Java core files (classes from Java system)
+
+WRAPPER CLASSES
+- wrappers wrap around basic primitive variable types to give it characteristics/methods of an Object (ie Int -> Integer)
+- Boolean, Character, Byte, Short, Long, Integer, Double
+- Autoboxing
+  - automatic conversion Java compiler makes between primitive types and their corresponding object wrappers
+- Casting
+  - to convert one data type to another
+  - implicit casting: done by compiler
+  - explicit casting: done by code
+    - int intNum = (int)longNum  //casts long to int
+
+STRINGS
+- All strings are immutible objects, if changed a new instance is created
+- many String methods return the new String
+- StringBuffer
+  - allows same string to be modified so new instances dont need to be created
+  - can improve performance if many changes needed (loops, etc)
+- StringBuilder
+  - similar to StringBuffer except is faster but not threasafe
+
+MODIFIERS
+- 
+
+CONDITIONS
+- 
+
+LOOPS
+- 
+
+EXCEPTION HANDLING
+- 
+
+COLLECTIONS
+- 
+
+GENERICS
+- 
+
+FUNCTIONAL PROGRAMMING
+- Lambdas
+- Streams
+
+MULTITHREADING
+- 
+
+
+
+
+
+
+
+

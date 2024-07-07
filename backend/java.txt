@@ -1,13 +1,42 @@
-KEYWORDS
-- Static
-  - applies to the class itself, not to specific instances of the class
-  - static variables
-    - can only be accessed on the class, not on any instance
-  - static methods
-    - can only be called by the class, not any instance
-
 OBJECT ORIENTED PROGRAMMING
-- 
+- Class: template to create instance of an object
+  - defines state (fields) and behavior (methods), state can change through methods
+  - all classes inherit from Object class which has own fields/methods
+  - methods
+    - toString() - used to print content of an object
+    - equals() - used to compare 2 objects
+      - defaults compares if they point to same object (same reference, ==), need to override to compare if contents equal
+    - hashCode() - used to decide which group/bucket an object should be put into
+- Object: instance of a class
+  - instanceOf - used to check if an object is a particular type (class, interface)
+- Inheritance
+  - subclass can extend/inherit the fields/methods of the parent class
+  - constructor: method used to create instance of the object
+    - has same name as class, no return type, and can accept any number of parameters
+    - default constructor: used by compiler if none defined (has no arguments - noArgs)
+    - this() - 
+    - super() - used to call super class constructor from subclass (auto invoked if not called)
+- Polymorphism
+  - method overloading: method with same name but different parameters
+  - method overriding: method with same name and parameters (signature) but with differently defined functionality
+- Abstraction
+  - Interface: defines a contract for the methods that must be implemented in a class (common actions that can be used by multiple classes)
+    - variables are always public static final
+    - methods are always public and abstract
+    - like classes, interfaces can also be extended, and a class can implement (subscribe to) multiple interfaces
+  - Abstract Class: used for classes that will define bases of shared state/behavior to be extended, but themselves will not be implemented
+    - only theiir subclasses will create concrete instances (ie AbstractMap vs HashMap)
+    - use when there is a lot of shared functionality between classes, then differences can be defined in subclasses
+  - Abstract Method: method whose body is not defined, it will be defined in subclasses
+  - Abstract Class vs Interface
+    - 
+- Encapsulation
+  - hiding the implementation of a class behind a well defined interface
+    - helps to change implementation without breaking code
+  - Coupling: measure of how much a class is dependent on other classes
+  - Cohesion: meeasure of how related the responsibilities/methods of a class are
+  - inner class: class created within another class, often when only used by that class
+    - static inner class: inner class that can be instantiated without the outer class
 
 JAVA PLATFORM
 - Platform Independent (build once, run anywhere)
@@ -54,13 +83,26 @@ STRINGS
   - similar to StringBuffer except is faster but not threasafe
 
 MODIFIERS
-- 
+- Default is when no modifiers used, only has access to classes in same package
+- Public: can be accessed by all other classes
+- Private: can only be accessed in the class it is used
+- Protected: can be accessed by same package, including any subclass of the protected methods/variables
+- Final: cannot be extended (class), changed (variable), or overridden (method)
+- Static: shared/used by each instance of the class, not new per instance, and can be accessed directly on class without new instance
+  - applies to the class itself, not to specific instances of the class
+  - static variables
+    - can only be accessed on the class, not on any instance
+  - static methods
+    - can only be called by the class, not any instance
+    - instance variables cant be accessed in static methods
 
 CONDITIONS
-- 
+- if(boolean){...}
+- switch(case){...}
 
 LOOPS
-- 
+- for in
+  - for(String item:list){...}
 
 EXCEPTION HANDLING
 - 
@@ -77,6 +119,15 @@ FUNCTIONAL PROGRAMMING
 
 MULTITHREADING
 - 
+
+
+
+
+
+
+
+
+
 
 
 

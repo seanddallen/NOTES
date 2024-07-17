@@ -1,1 +1,20 @@
+GENERAL
+- Replaces Enzyme for React testing
+- Not focused on internals like props/state, but output like what is rendered in DOM 
 
+SETUP
+
+
+COMPONENTS
+
+
+FORMS
+
+
+APIS
+
+
+STATE MANAGEMENT
+
+
+ROUTING

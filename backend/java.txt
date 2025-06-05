@@ -149,13 +149,27 @@ COLLECTIONS
       - containsKey(), containsValue()
       - keySet() - get list of keys, values()- get list of keys, entrySet()- get list of key/value pairs
 - Collection Methods
-  - add()
-  - remove()
-  - contains()
-  - size(), isEmpty()
+  - add(), remove()
+  - contains(), size(), isEmpty()
+- Concurrent Collections
+  - only one thread executed at a time, uses synchronized methods/blocks
+  - Approaches to Synchronization
+    - Copy on Write: all values stored in immutible array, new arrayy created if any modifications
+      - only write operations synchronized (not read)
+      - CopyOnWriteArrayList
+    - Compare and Swap: cache values for each element, compare each value with cached value, if no change then safe to use/update, if changed then try again or skip
+    - lock: used to divide methods into different blocks that only run after previous complete
+  - Atomic Operations: happens all at once, either all complete or none
+    - 
+
 
 GENERICS
-- 
+- General
+  - used to create generic classes/methods which can be used by various/other Types
+- Class
+  - class MyGenericClass<T>
+  - <T extends/super class> restricts to sub/super classes
+- Method
 
 FUNCTIONAL PROGRAMMING
 - Lambdas

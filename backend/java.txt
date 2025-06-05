@@ -129,6 +129,14 @@ FUNCTIONAL PROGRAMMING
 MULTITHREADING
 - 
 
+MISC
+- Serialization: convert object to some object representation (string, bytes, json, xml, etc)
+  - the process of converting an object's state into a format that can be stored or transmitted, allowing it to be recreated later
+  - This is often done by converting an object into a stream of bytes or a textual format like JSON or XML
+  - Reasons: 1) Storing objects in files or databases, 2) Transmitting objects over a network, 3) Sharing data between different applications/systems
+  - use Serializable interface
+  - "Transient" fields are properties on the object that do not need to be serialized and get ignored
+- Deserialization: convert some object representation back to an object
 
 
 

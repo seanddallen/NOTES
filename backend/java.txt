@@ -105,7 +105,16 @@ LOOPS
   - for(String item:list){...}
 
 EXCEPTION HANDLING
-- 
+- Throwable (highest class)
+  - Error: cannot do anything
+  - Exception: can handle and move forward
+    - checked: do handle/throw
+      - The Java compiler enforces you to either catch or declare that your method might throw a checked exception. 
+      - Checked exceptions are typically associated with external factors that can be handled or recovered from (file not found, database/network connection errors, etc)
+    - unchecked: do not handle/throw
+      - The Java compiler doesn't require you to handle or declare unchecked exceptions. 
+      - Unchecked exceptions often indicate programming errors or logical errors within the code, such as NullPointerException
+      - any exception that extends RuntimeException is unchecked
 
 COLLECTIONS
 - 

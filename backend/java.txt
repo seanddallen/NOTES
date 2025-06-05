@@ -117,7 +117,42 @@ EXCEPTION HANDLING
       - any exception that extends RuntimeException is unchecked
 
 COLLECTIONS
-- 
+- Collection (highest level interface) 
+  - List: non-unique list, position in array matters, can add/remove in anyy position, added to end when not specified
+    - ArrayList
+      - faster for iteration, slower for insertion/removal
+    - LinkedList: elements are doubly linked (front/back)
+      - Ideal for stacks/queues
+      - slower for iteration, faster for insertion/removal
+    - Vector: same as the ArrayList but sychronized
+    - List Methods
+      - get(index), set(index), add/remove
+      - indexOf(), lastIndexOf()
+  - Set: unique list, noo duplications
+    - sortedSet: maintains elements in sorted order
+    - hashSet: unordered, iterates in random order, uses hasCode()
+    - linkedHashSet: ordered, iterates in order of insertion
+    - TreeSet: stored in sorted order, contains navigation helper methods
+  - Queue: First in First Out (FIFO)
+    - Dequeue: queue with processing on both ends, can add/remove from beginning and/or end of queue
+    - BlockingQueue: queue with wait (until ready) feature
+  - Map: stores key/value pairs (does not extend Collection)
+    - sortedMap: maintains keys in sorted order
+    - hashMap: unordered, iterates in random order, uses hasCode()
+      - slower for iteration, faster for insertion/removal
+    - hashTable: same as the hashMap but sychronized
+    - linkedHashMap: ordered, iterates in order of insertion
+      - faster for iteration, slower for insertion/removal
+    - TreeMap: stored in sorted order, contains navigation helper methods
+    - Map Methods
+      - get(key), put(key, val), remove(key)
+      - containsKey(), containsValue()
+      - keySet() - get list of keys, values()- get list of keys, entrySet()- get list of key/value pairs
+- Collection Methods
+  - add()
+  - remove()
+  - contains()
+  - size(), isEmpty()
 
 GENERICS
 - 
